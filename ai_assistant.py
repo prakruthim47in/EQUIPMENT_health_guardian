@@ -143,7 +143,7 @@ def _build_root_agent() -> Agent:
 def _get_runner() -> InMemoryRunner:
     global _runner
     if _runner is None:
-    _runner = InMemoryRunner( agent=_build_root_agent(), app_name="equipment_guardian") 
+        _runner = InMemoryRunner(agent=_build_root_agent(), app_name="equipment_guardian")
     return _runner
 
 
